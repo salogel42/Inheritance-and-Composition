@@ -10,5 +10,6 @@ class Doctor < Person
   end
 end
 
-doc = Doctor.new( {name: "Sarah", patients:[]} )
+doc = Doctor.new( {name: "Sarah", patients:[Patient.new(Record.new("stuff"))]} )
 p doc.name
+p doc.patients
